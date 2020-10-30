@@ -16,6 +16,7 @@ export default {
       (this.$refs.autocomplete),
       {types: ['geocode']}
     );
+      console.log(process.env.VUE_APP_WEATHER);
 
     this.autocomplete.addListener('place_changed', () => {
       let place = this.autocomplete.getPlace();
@@ -35,7 +36,8 @@ export default {
     async getWeather(lat, lon){
       console.log(lat);
       console.log(lon);
-      let request = 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid=32cf0aa06f9e43913c0913e7ead76070&units=imperial';
+
+      let request = 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid='+process.env.VUE_APP_WEATHER+'&units=imperial';
       const res = await fetch(request);
       const data = await res.json();
       console.log(data);
