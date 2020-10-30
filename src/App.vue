@@ -26,7 +26,20 @@ export default {
       let city = ac[0]["short_name"];
 
       console.log(`The user picked ${city} with the coordinates ${lat}, ${lon}`);
+      this.getWeather(lat, lon);
+
     });
+  },
+
+  methods: {
+    async getWeather(lat, lon){
+      console.log(lat);
+      console.log(lon);
+      let request = 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid=32cf0aa06f9e43913c0913e7ead76070&units=imperial';
+      const res = await fetch(request);
+      const data = await res.json();
+      console.log(data);
+    }
   }
 }
 </script>
