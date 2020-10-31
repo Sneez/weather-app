@@ -1,0 +1,23 @@
+<svg width="44" height="44" viewBox="0 0 44 44" version="2.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Lightening</title>
+<desc>Created using Figma 0.90</desc>
+<g id="Canvas" transform="translate(-749 325)" figma:type="canvas">
+<mask id="mask0_outline" mask-type="alpha">
+<path d="M 749 -325L 793 -325L 793 -281L 749 -281L 749 -325Z" fill="#FFFFFF"/>
+</mask>
+<g id="Lightening" style="mix-blend-mode:normal;" mask="url(#mask0_outline)" figma:type="frame">
+<g id="Lightening" style="mix-blend-mode:normal;" figma:type="group">
+<g id="Vector 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(765 -297)" fill="#FFCF3B" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Cloud" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(753 -324)" fill="#697B94" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 1.47765 8.34783L 4.08571 8.34783L 1.39754 14.2043C 1.12262 14.8032 1.87425 15.3432 2.35411 14.8915L 11.1643 6.59769C 11.8236 5.977 11.3844 4.86957 10.4788 4.86957L 7.05714 4.86957L 8.14872 1.29182C 8.34477 0.649249 7.86406 0 7.19225 0L 4.01961 0C 3.61085 0 3.24323 0.248782 3.09128 0.628252L 0.549312 6.97608C 0.286252 7.63299 0.770016 8.34783 1.47765 8.34783Z"/>
+<path id="path1_fill" d="M 7 25L 27.5 25L 28 25L 28 24.9855C 32.4617 24.7267 36 21.0266 36 16.5C 36 11.8056 32.1944 8 27.5 8C 26.8977 8 26.3101 8.06264 25.7432 8.18176C 24.6878 3.49821 20.5024 0 15.5 0C 9.70101 0 5 4.70101 5 10.5C 5 10.7628 5.00966 11.0234 5.02864 11.2814C 2.12244 12.1328 0 14.8185 0 18C 0 21.866 3.13401 25 7 25Z"/>
+</defs>
+</svg>

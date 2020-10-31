@@ -1,0 +1,47 @@
+<svg width="44" height="44" viewBox="0 0 44 44" version="2.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Sun + Cloud</title>
+<desc>Created using Figma 0.90</desc>
+<g id="Canvas" transform="translate(-943 324)" figma:type="canvas">
+<mask id="mask0_outline" mask-type="alpha">
+<path d="M 943 -324L 987 -324L 987 -280L 943 -280L 943 -324Z" fill="#FFFFFF"/>
+</mask>
+<g id="Sun + Cloud" style="mix-blend-mode:normal;" mask="url(#mask0_outline)" figma:type="frame">
+<g id="Clouds + Sun" style="mix-blend-mode:normal;" figma:type="group">
+<g id="Subtract" style="mix-blend-mode:normal;" figma:type="vector-operation">
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 1 943.88 -321)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 1 943.88 -321)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path2_fill" transform="matrix(1 0 0 1 943.88 -321)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path3_fill" transform="matrix(1 0 0 1 943.88 -321)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path4_fill" transform="matrix(1 0 0 1 943.88 -321)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path5_fill" transform="matrix(1 0 0 1 943.88 -321)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Group" style="mix-blend-mode:normal;" figma:type="group">
+<g id="Ellipse 7" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path6_fill" transform="translate(957.12 -296)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 7" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path7_fill" transform="translate(973.12 -298)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 7" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path8_fill" transform="translate(961.12 -305)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 8" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path9_fill" transform="translate(963.12 -288)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 19 10C 14.0294 10 10 14.0294 10 19C 10 21.7307 11.2161 24.1773 13.1362 25.8278C 13.7396 25.1165 14.4651 24.5121 15.2803 24.0469C 15.7634 18.418 20.4856 14 26.2396 14C 26.322 14 26.4043 14.0009 26.4863 14.0027C 24.872 11.5892 22.1216 10 19 10Z"/>
+<path id="path1_fill" d="M 20 6L 20 1C 20 0.447715 19.5523 -2.77838e-17 19 0C 18.4477 2.77838e-17 18 0.447715 18 1L 18 6C 18 6.55228 18.4477 7 19 7C 19.5523 7 20 6.55228 20 6Z"/>
+<path id="path2_fill" d="M 6 18L 1 18C 0.447715 18 -3.92805e-17 18.4477 0 19C 3.92805e-17 19.5523 0.447715 20 1 20L 6 20C 6.55228 20 7 19.5523 7 19C 7 18.4477 6.55228 18 6 18Z"/>
+<path id="path3_fill" d="M 28.8995 10.5147L 32.435 6.97919C 32.8256 6.58866 32.8256 5.9555 32.435 5.56497C 32.0445 5.17445 31.4113 5.17445 31.0208 5.56497L 27.4853 9.10051C 27.0948 9.49103 27.0948 10.1242 27.4853 10.5147C 27.8758 10.9052 28.509 10.9052 28.8995 10.5147Z"/>
+<path id="path4_fill" d="M 6.97918 32.435L 10.5147 28.8995C 10.9052 28.509 10.9052 27.8758 10.5147 27.4853C 10.1242 27.0948 9.49103 27.0948 9.10051 27.4853L 5.56497 31.0208C 5.17445 31.4113 5.17445 32.0445 5.56497 32.435C 5.95549 32.8256 6.58866 32.8256 6.97918 32.435Z"/>
+<path id="path5_fill" d="M 10.5147 9.10051L 6.97919 5.56497C 6.58866 5.17445 5.9555 5.17445 5.56497 5.56497C 5.17445 5.9555 5.17445 6.58866 5.56497 6.97919L 9.10051 10.5147C 9.49103 10.9052 10.1242 10.9052 10.5147 10.5147C 10.9052 10.1242 10.9052 9.49103 10.5147 9.10051Z"/>
+<path id="path6_fill" d="M 12 6C 12 9.31371 9.31371 12 6 12C 2.68629 12 0 9.31371 0 6C 0 2.68629 2.68629 0 6 0C 9.31371 0 12 2.68629 12 6Z"/>
+<path id="path7_fill" d="M 14 7C 14 10.866 10.866 14 7 14C 3.13401 14 0 10.866 0 7C 0 3.13401 3.13401 0 7 0C 10.866 0 14 3.13401 14 7Z"/>
+<path id="path8_fill" d="M 18 9C 18 13.9706 13.9706 18 9 18C 4.02944 18 0 13.9706 0 9C 0 4.02944 4.02944 0 9 0C 13.9706 0 18 4.02944 18 9Z"/>
+<path id="path9_fill" d="M 0 0L 17 0L 17 4L 0 4L 0 0Z"/>
+</defs>
+</svg>

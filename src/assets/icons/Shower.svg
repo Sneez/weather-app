@@ -1,0 +1,55 @@
+<svg width="44" height="44" viewBox="0 0 44 44" version="2.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Shower</title>
+<desc>Created using Figma 0.90</desc>
+<g id="Canvas" transform="translate(-259 324)" figma:type="canvas">
+<mask id="mask0_outline" mask-type="alpha">
+<path d="M 259 -324L 303 -324L 303 -280L 259 -280L 259 -324Z" fill="#FFFFFF"/>
+</mask>
+<g id="Shower" style="mix-blend-mode:normal;" mask="url(#mask0_outline)" figma:type="frame">
+<g id="Rain" style="mix-blend-mode:normal;" figma:type="group">
+<g id="Cloud" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(263 -321)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Group" style="mix-blend-mode:normal;" figma:type="group">
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(286 -290)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(283 -294)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(289 -294)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(280 -290)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(277 -286)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(271 -286)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(283 -286)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(289 -286)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(274 -290)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(277 -294)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(271 -294)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 7 25L 27.5 25L 28 25L 28 24.9855C 32.4617 24.7267 36 21.0266 36 16.5C 36 11.8056 32.1944 8 27.5 8C 26.8977 8 26.3101 8.06264 25.7432 8.18176C 24.6878 3.49821 20.5024 0 15.5 0C 9.70101 0 5 4.70101 5 10.5C 5 10.7628 5.00966 11.0234 5.02864 11.2814C 2.12244 12.1328 0 14.8185 0 18C 0 21.866 3.13401 25 7 25Z"/>
+<path id="path1_fill" d="M 2 2C 2 2.55228 1.55228 3 1 3C 0.447715 3 0 2.55228 0 2C 0 1.15976 0.705995 0.31953 0.931581 0.0724965C 0.968823 0.0317139 1.03118 0.0317138 1.06842 0.0724964C 1.294 0.31953 2 1.15976 2 2Z"/>
+</defs>
+</svg>

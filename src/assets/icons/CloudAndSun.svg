@@ -1,0 +1,27 @@
+<svg width="44" height="44" viewBox="0 0 44 44" version="2.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Cloud + Sun</title>
+<desc>Created using Figma 0.90</desc>
+<g id="Canvas" transform="translate(-1141 325)" figma:type="canvas">
+<mask id="mask0_outline" mask-type="alpha">
+<path d="M 1141 -325L 1185 -325L 1185 -281L 1141 -281L 1141 -325Z" fill="#FFFFFF"/>
+</mask>
+<g id="Cloud + Sun" style="mix-blend-mode:normal;" mask="url(#mask0_outline)" figma:type="frame">
+<g id="Cloudy + Sun" style="mix-blend-mode:normal;" figma:type="group">
+<g id="Subtract" style="mix-blend-mode:normal;" figma:type="vector-operation">
+<use xlink:href="#path0_fill" transform="translate(1164.87 -318)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Subtract" style="mix-blend-mode:normal;" figma:type="vector-operation">
+<use xlink:href="#path1_fill" transform="translate(1142 -316)" fill="#697B94" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Union" style="mix-blend-mode:normal;" figma:type="vector-operation">
+<use xlink:href="#path2_fill" transform="translate(1156 -308)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 15.1254 9C 15.1254 4.02944 11.096 0 6.12543 0C 3.75932 0 1.60647 0.91307 0 2.40608C 1.93822 3.82455 3.45265 5.78778 4.31786 8.07036C 7.90103 8.49611 10.903 10.8165 12.294 14.0015C 12.7155 14.0093 13.1298 14.046 13.5352 14.1098C 14.5381 12.6583 15.1254 10.8977 15.1254 9Z"/>
+<path id="path1_fill" d="M 0 18C 0 21.866 3.13401 25 7 25L 12.4268 25C 12.1504 24.2181 12 23.3766 12 22.5C 12 19.6216 13.6215 17.1219 16.0009 15.8646C 16.069 10.7364 19.9972 6.53987 25.0123 6.04816C 23.337 2.4748 19.7075 0 15.5 0C 9.70101 0 5 4.70101 5 10.5C 5 10.7628 5.00966 11.0234 5.02864 11.2814C 2.12244 12.1328 0 14.8185 0 18Z"/>
+<path id="path2_fill" d="M 0 14.5C 0 17.5376 2.46243 20 5.5 20C 5.66854 20 5.83532 19.9924 6 19.9776L 6 20L 21 20C 24.866 20 28 16.866 28 13C 28 9.13401 24.866 6 21 6C 20.582 6 20.1725 6.03664 19.7747 6.10688C 18.9243 2.60233 15.7661 0 12 0C 7.58172 0 4 3.58172 4 8C 4 8.40202 4.02965 8.79712 4.0869 9.18323C 1.73407 9.80694 0 11.951 0 14.5Z"/>
+</defs>
+</svg>

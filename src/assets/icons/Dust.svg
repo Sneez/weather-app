@@ -1,0 +1,130 @@
+<svg width="44" height="44" viewBox="0 0 44 44" version="2.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Dust</title>
+<desc>Created using Figma 0.90</desc>
+<g id="Canvas" transform="translate(-875 324)" figma:type="canvas">
+<mask id="mask0_outline" mask-type="alpha">
+<path d="M 875 -324L 919 -324L 919 -280L 875 -280L 875 -324Z" fill="#FFFFFF"/>
+</mask>
+<g id="Dust" style="mix-blend-mode:normal;" mask="url(#mask0_outline)" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="group">
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(902 -299)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(899 -303)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(905 -303)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(896 -299)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(893 -295)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(887 -295)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(899 -295)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(905 -295)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(890 -299)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(893 -303)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(887 -303)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(899 -311)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(905 -311)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(908 -299)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(908 -307)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(908 -315)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(884 -299)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(896 -315)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(902 -315)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(893 -311)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(890 -307)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(884 -307)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(896 -307)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(902 -307)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(887 -311)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(890 -315)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(884 -315)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(911 -311)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(911 -303)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(911 -295)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(881 -311)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(881 -295)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(896 -291)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(890 -291)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(902 -291)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(908 -291)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(884 -291)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(881 -303)" fill="#FFCAB0" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 2 1C 2 1.55228 1.55228 2 1 2C 0.447715 2 0 1.55228 0 1C 0 0 1 0 1 0L 1 2.96746e-49C 1 2.96746e-49 2 0 2 1Z"/>
+</defs>
+</svg>

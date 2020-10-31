@@ -1,0 +1,33 @@
+<svg width="44" height="44" viewBox="0 0 44 44" version="2.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Sunrise</title>
+<desc>Created using Figma 0.90</desc>
+<g id="Canvas" transform="translate(-1081 324)" figma:type="canvas">
+<mask id="mask0_outline" mask-type="alpha">
+<path d="M 1081 -324L 1125 -324L 1125 -280L 1081 -280L 1081 -324Z" fill="#FFFFFF"/>
+</mask>
+<g id="Sunrise" style="mix-blend-mode:normal;" mask="url(#mask0_outline)" figma:type="frame">
+<g id="Sun up" style="mix-blend-mode:normal;" figma:type="group">
+<g id="Sun" style="mix-blend-mode:normal;" figma:type="vector-operation">
+<use xlink:href="#path0_fill" transform="translate(1084 -319)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="translate(1084 -319)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path2_fill" transform="translate(1084 -319)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path3_fill" transform="translate(1084 -319)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path4_fill" transform="translate(1084 -319)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path5_fill" transform="translate(1084 -319)" fill="#FFCC33" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Polygon" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path6_fill" transform="matrix(1 2.44929e-16 -2.44929e-16 1 1097 -293)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 19 10C 14.0294 10 10 14.0294 10 19C 10 19.3776 10.049 19.7093 10.1397 20L 27.8439 20C 27.9452 19.7093 28 19.3776 28 19C 28 14.0294 23.9706 10 19 10Z"/>
+<path id="path1_fill" d="M 20 6L 20 1C 20 0.447715 19.5523 -3.92805e-17 19 0C 18.4477 3.92805e-17 18 0.447715 18 1L 18 6C 18 6.55228 18.4477 7 19 7C 19.5523 7 20 6.55228 20 6Z"/>
+<path id="path2_fill" d="M 6 18L 1 18C 0.447715 18 -2.58676e-17 18.4477 0 19C 2.58676e-17 19.5523 0.447715 20 1 20L 6 20C 6.55228 20 7 19.5523 7 19C 7 18.4477 6.55228 18 6 18Z"/>
+<path id="path3_fill" d="M 37 18L 32 18C 31.4477 18 31 18.4477 31 19C 31 19.5523 31.4477 20 32 20L 37 20C 37.5523 20 38 19.5523 38 19C 38 18.4477 37.5523 18 37 18Z"/>
+<path id="path4_fill" d="M 28.8995 10.5147L 32.435 6.97919C 32.8255 6.58866 32.8255 5.9555 32.435 5.56497C 32.0445 5.17445 31.4113 5.17445 31.0208 5.56497L 27.4853 9.10051C 27.0947 9.49103 27.0947 10.1242 27.4853 10.5147C 27.8758 10.9052 28.509 10.9052 28.8995 10.5147Z"/>
+<path id="path5_fill" d="M 10.5147 9.10051L 6.9792 5.56497C 6.58867 5.17445 5.95551 5.17445 5.56499 5.56497C 5.17446 5.9555 5.17446 6.58866 5.56499 6.97919L 9.10051 10.5147C 9.49104 10.9052 10.1242 10.9052 10.5147 10.5147C 10.9052 10.1242 10.9053 9.49103 10.5147 9.10051Z"/>
+<path id="path6_fill" d="M 5.24074 0.885799C 5.63984 0.420188 6.36016 0.420188 6.75926 0.885799L 11.2925 6.1746C 11.5705 6.49894 11.3401 7 10.9129 7L 1.08711 7C 0.659934 7 0.429479 6.49894 0.707482 6.1746L 5.24074 0.885799Z"/>
+</defs>
+</svg>

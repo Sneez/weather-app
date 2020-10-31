@@ -1,0 +1,38 @@
+<svg width="44" height="44" viewBox="0 0 44 44" version="2.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Rain</title>
+<desc>Created using Figma 0.90</desc>
+<g id="Canvas" transform="translate(-444 324)" figma:type="canvas">
+<mask id="mask0_outline" mask-type="alpha">
+<path d="M 444 -324L 488 -324L 488 -280L 444 -280L 444 -324Z" fill="#FFFFFF"/>
+</mask>
+<g id="Rain" style="mix-blend-mode:normal;" mask="url(#mask0_outline)" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="group">
+<g id="Cloud" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(448 -322)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_stroke" transform="translate(473 -294)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_stroke" transform="translate(467 -294)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path3_stroke" transform="translate(461 -294)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_stroke" transform="translate(459 -294)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_stroke" transform="translate(452 -294)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 7 25L 27.5 25L 28 25L 28 24.9855C 32.4617 24.7267 36 21.0266 36 16.5C 36 11.8056 32.1944 8 27.5 8C 26.8977 8 26.3101 8.06264 25.7432 8.18176C 24.6878 3.49821 20.5024 0 15.5 0C 9.70101 0 5 4.70101 5 10.5C 5 10.7628 5.00966 11.0234 5.02864 11.2814C 2.12244 12.1328 0 14.8185 0 18C 0 21.866 3.13401 25 7 25Z"/>
+<path id="path1_stroke" d="M 3.42308 0.384615C 3.63549 -0.125186 3.39442 -0.71066 2.88462 -0.923077C 2.37481 -1.13549 1.78934 -0.894417 1.57692 -0.384615L 3.42308 0.384615ZM -0.923077 5.61538C -1.13549 6.12519 -0.894417 6.71066 -0.384615 6.92308C 0.125186 7.13549 0.71066 6.89442 0.923077 6.38462L -0.923077 5.61538ZM 1.57692 -0.384615L -0.923077 5.61538L 0.923077 6.38462L 3.42308 0.384615L 1.57692 -0.384615Z"/>
+<path id="path2_stroke" d="M 4.432 0.362446C 4.63218 -0.152286 4.37718 -0.731831 3.86245 -0.932005C 3.34771 -1.13218 2.76817 -0.877178 2.568 -0.362446L 4.432 0.362446ZM -0.932005 8.63755C -1.13218 9.15229 -0.877178 9.73183 -0.362446 9.932C 0.152286 10.1322 0.731831 9.87718 0.932005 9.36245L -0.932005 8.63755ZM 2.568 -0.362446L -0.932005 8.63755L 0.932005 9.36245L 4.432 0.362446L 2.568 -0.362446Z"/>
+<path id="path3_stroke" d="M 5.43633 0.351123C 5.63025 -0.165997 5.36824 -0.742409 4.85112 -0.936329C 4.334 -1.13025 3.75759 -0.868244 3.56367 -0.351123L 5.43633 0.351123ZM -0.936329 11.6489C -1.13025 12.166 -0.868244 12.7424 -0.351123 12.9363C 0.165997 13.1302 0.742409 12.8682 0.936329 12.3511L -0.936329 11.6489ZM 3.56367 -0.351123L -0.936329 11.6489L 0.936329 12.3511L 5.43633 0.351123L 3.56367 -0.351123Z"/>
+<path id="path4_stroke" d="M 2.43633 0.351123C 2.63025 -0.165997 2.36824 -0.742409 1.85112 -0.936329C 1.334 -1.13025 0.757591 -0.868244 0.563671 -0.351123L 2.43633 0.351123ZM -0.936329 3.64888C -1.13025 4.166 -0.868244 4.74241 -0.351123 4.93633C 0.165997 5.13025 0.742409 4.86824 0.936329 4.35112L -0.936329 3.64888ZM 0.563671 -0.351123L -0.936329 3.64888L 0.936329 4.35112L 2.43633 0.351123L 0.563671 -0.351123Z"/>
+</defs>
+</svg>
