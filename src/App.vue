@@ -15,7 +15,7 @@
 
     <div class="row info-row" v-if="focusedWeather.temp !== ''">
       <div class="col-4">
-        <h3 class="temp-styling">{{ focusedWeather.temp }}&#176;F</h3>
+        <h3 class="gold-color">{{ focusedWeather.temp }}&#176;F</h3>
       </div>
       <div class="col-8">
         <h3 class="no-bottom-margin right-float">
@@ -28,7 +28,17 @@
 
     <img v-if="focusedWeather.icon !== ''" class="icon-style" :src="getImgUrl(focusedWeather.icon)">
 
+    <div class="row">
+      <div class="forecast-container">
+        <div v-for="day in forecast" :key="day.date" class="forecast">
+          <div>{{day.date}}</div>
+          <div class="gold-color">{{day.temp}}&#176;F</div>
+          <img class="forecast-icon" :src="getImgUrl(day.icon)">
+          <div class="small-text">{{day.wind}} mph</div>
+        </div>
+      </div>
 
+    </div>
 
   </div>
 </template>
@@ -46,7 +56,7 @@ export default {
         icon: '',
         date: ''
       },
-      imgString: 'Rain'
+      forecast: []
     }
   },
 
@@ -60,6 +70,7 @@ export default {
 
     // listener for setting current city and weather after autocomplete is clicked
     this.autocomplete.addListener('place_changed', () => {
+      this.forecast = [];
       let place = this.autocomplete.getPlace();
       let ac = place.address_components;
       let lat = place.geometry.location.lat();
@@ -94,16 +105,25 @@ export default {
       const res = await fetch(request);
       const data = await res.json();
       console.log(data);
+
       this.focusedWeather.temp = Math.round(data.current.temp);
       this.focusedWeather.wind = Math.round(data.current.wind_speed);
       this.focusedWeather.date = this.convertDate(data.current.dt);
-
-      //capitalize the words in description
-      this.focusedWeather.description = data.current.weather[0].description.split(' ')
-        .map(word => word.charAt(0).toUpperCase() + word.substring(1)).join(' ');
-
+      this.focusedWeather.description = this.capitalizeWords(data.current.weather[0].description);
       this.focusedWeather.icon = this.getIconName(data.current.weather[0].icon);
       console.log(this.focusedWeather);
+
+      // set forecast array
+      for(let i = 0; i < 8; i++){
+        this.forecast.push({
+          temp: Math.round(data.daily[i].temp.day),
+          wind: Math.round(data.daily[i].wind_speed),
+          icon: this.getIconName(data.daily[i].weather[0].icon),
+          date: this.convertDate(data.daily[i].dt)
+        })
+      }
+      console.log(this.forecast);
+
     },
 
     // grab users city from their geo coordinates
@@ -135,6 +155,12 @@ export default {
       let selectedDate = new Date(epoch * 1000);
       const options = { day: 'numeric', month: 'numeric' };
       return selectedDate.toLocaleDateString("en-US", options);
+    },
+
+    // capitalize the words in the weather description
+    capitalizeWords(sentence){
+      return sentence.split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.substring(1)).join(' ');
     },
 
     // set icon based on the icon name returned from weather data
@@ -205,7 +231,6 @@ body {
   display: block;
   width: 100%;
   margin: 0 auto;
-  margin-top: 5vw;
   font-size: 20px;
   font-weight: 400;
   outline: none;
@@ -225,6 +250,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
 }
 
 .no-bottom-margin{
@@ -238,7 +264,7 @@ body {
   margin-right: -5px;
 }
 
-.temp-styling{
+.gold-color{
   color: #ffcc33;
 }
 
@@ -257,4 +283,28 @@ body {
   float: right;
 }
 
+.forecast-container{
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.forecast{
+  display: inline-block;
+  border: 2px solid #697b94;
+  border-radius: 7px;
+  margin-right: 7px;
+  font-size: 20px;
+  text-align: center;
+  width: 70px;
+}
+
+.forecast-icon{
+  width: 50px;
+}
+
+.small-text{
+  font-size: 18px;
+}
 </style>
