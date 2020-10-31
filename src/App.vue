@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+
+    <!-- search bar -->
     <div class="row">
       <input ref="autocomplete"
         placeholder="Enter a City"
@@ -8,11 +10,11 @@
         type="text" />
     </div>
 
-
+    <!-- city and weather description -->
     <h4 class="top-padding">{{ focusedWeather.city }}</h4>
     <h2>{{ focusedWeather.description }}</h2>
 
-
+    <!-- info bar with temp and wind -->
     <div class="row info-row" v-if="focusedWeather.temp !== ''">
       <div class="col-4">
         <h3 class="gold-color">{{ focusedWeather.temp }}&#176;F</h3>
@@ -25,9 +27,10 @@
       </div>
     </div>
 
-
+    <!-- weather icon -->
     <img v-if="focusedWeather.icon !== ''" class="icon-style" :src="getImgUrl(focusedWeather.icon)">
 
+    <!-- forecast divs -->
     <div class="row">
       <div class="forecast-container">
         <div v-for="day in forecast" :key="day.date" class="forecast">
@@ -37,7 +40,6 @@
           <div class="small-text">{{day.wind}} mph</div>
         </div>
       </div>
-
     </div>
 
   </div>
@@ -99,30 +101,39 @@ export default {
     // get weather of selected location and set it for display
     async getWeather(lat, lon){
 
-      let request = 'http://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+lon+
-        '&exclude=minutely,hourly,alerts&appid='+process.env.VUE_APP_WEATHER+'&units=imperial';
-      // TODO: add error handling
-      const res = await fetch(request);
-      const data = await res.json();
-      console.log(data);
+      try{
 
-      this.focusedWeather.temp = Math.round(data.current.temp);
-      this.focusedWeather.wind = Math.round(data.current.wind_speed);
-      this.focusedWeather.date = this.convertDate(data.current.dt);
-      this.focusedWeather.description = this.capitalizeWords(data.current.weather[0].description);
-      this.focusedWeather.icon = this.getIconName(data.current.weather[0].icon);
-      console.log(this.focusedWeather);
+        let request = 'http://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+lon+
+          '&exclude=minutely,hourly,alerts&appid='+process.env.VUE_APP_WEATHER+'&units=imperial';
+        // TODO: add error handling
+        const res = await fetch(request);
+        const data = await res.json();
 
-      // set forecast array
-      for(let i = 0; i < 8; i++){
-        this.forecast.push({
-          temp: Math.round(data.daily[i].temp.day),
-          wind: Math.round(data.daily[i].wind_speed),
-          icon: this.getIconName(data.daily[i].weather[0].icon),
-          date: this.convertDate(data.daily[i].dt)
-        })
+        if(data.error_message){
+          console.log(data.error_message);
+        } else {
+
+          // set focused weather data
+          this.focusedWeather.temp = Math.round(data.current.temp);
+          this.focusedWeather.wind = Math.round(data.current.wind_speed);
+          this.focusedWeather.date = this.convertDate(data.current.dt);
+          this.focusedWeather.description = this.capitalizeWords(data.current.weather[0].description);
+          this.focusedWeather.icon = this.getIconName(data.current.weather[0].icon);
+
+          // set forecast array
+          for(let i = 0; i < 8; i++){
+            this.forecast.push({
+              temp: Math.round(data.daily[i].temp.day),
+              wind: Math.round(data.daily[i].wind_speed),
+              icon: this.getIconName(data.daily[i].weather[0].icon),
+              date: this.convertDate(data.daily[i].dt)
+            })
+          }
+        }
+
+      } catch (error) {
+        console.log(error.message)
       }
-      console.log(this.forecast);
 
     },
 
@@ -130,14 +141,14 @@ export default {
     async getCityFrom(lat, long) {
       try {
         const request = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
-            lat + "," + long + "&result_type=locality&key=" + process.env.VUE_APP_MAPS
+            lat + "," + long + "&result_type=locality&key=" + process.env.VUE_APP_MAPS;
         const res = await fetch(request);
         const data = await res.json();
 
         if(data.error_message) {
           console.log(data.error_message)
         } else {
-          console.log(data.results[0]);
+          // set current city
           this.focusedWeather.city = data.results[0].address_components[0].short_name;
         }
       } catch (error) {
