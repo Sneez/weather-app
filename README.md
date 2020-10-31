@@ -12,17 +12,17 @@ scrollable!
 
 ## Local setup instructions:
 
-## Clone the repository
+### Clone the repository
 ```
 git clone https://github.com/Sneez/weather-app.git
 ```
 
-## Rename the temporary env file and add your own API keys
+### Rename the temporary env file and add your own API keys
 ```
 mv .envtemp .env
 ```
 
-## Install dependencies
+### Install dependencies
 ```
 npm install
 ```
