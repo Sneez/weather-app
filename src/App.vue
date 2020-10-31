@@ -102,10 +102,8 @@ export default {
     async getWeather(lat, lon){
 
       try{
-
         let request = 'http://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+lon+
           '&exclude=minutely,hourly,alerts&appid='+process.env.VUE_APP_WEATHER+'&units=imperial';
-        // TODO: add error handling
         const res = await fetch(request);
         const data = await res.json();
 
@@ -130,11 +128,9 @@ export default {
             })
           }
         }
-
       } catch (error) {
         console.log(error.message)
       }
-
     },
 
     // grab users city from their geo coordinates
@@ -217,8 +213,6 @@ export default {
           return 'Windy';
       }
     }
-
-
 
   }
 }
