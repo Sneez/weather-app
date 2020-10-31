@@ -6,13 +6,23 @@ enter any city on Earth with Google Place Autocomplete and immediately see the c
 location.  Upon selecting an autocomplete option, the app gets the geo coordinates returned from the Google API and uses
 those coordinates to make a request to the Open Weather Map API.
 
+![Alt text](./src/assets/examples/cancun.PNG?raw=true "Cancun")
+![Alt text](./src/assets/examples/minneapolis.PNG?raw=true "Minneapolis")
+![Alt text](./src/assets/examples/winnipeg.PNG?raw=true "Winnipeg")
+
+## Local setup instructions:
+
+## Clone the repository
+```
+git clone https://github.com/Sneez/weather-app.git
+```
 
 ## Rename the temporary env file and add your own API keys
 ```
 mv .envtemp .env
 ```
 
-## Project setup
+## Install dependencies
 ```
 npm install
 ```
