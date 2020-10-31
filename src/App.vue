@@ -9,8 +9,7 @@
     </div>
 
 
-
-    <h3 class="top-padding">{{ focusedWeather.city }}</h3>
+    <h4 class="top-padding">{{ focusedWeather.city }}</h4>
     <h2>{{ focusedWeather.description }}</h2>
 
 
@@ -44,7 +43,8 @@ export default {
         wind: '',
         description: '',
         city: '',
-        icon: ''
+        icon: '',
+        date: ''
       },
       imgString: 'Rain'
     }
@@ -52,59 +52,61 @@ export default {
 
   mounted() {
 
+    // init autocomplete for the input
     this.autocomplete = new google.maps.places.Autocomplete(
       (this.$refs.autocomplete),
       {types: ['geocode']}
     );
 
+    // listener for setting current city and weather after autocomplete is clicked
     this.autocomplete.addListener('place_changed', () => {
       let place = this.autocomplete.getPlace();
       let ac = place.address_components;
       let lat = place.geometry.location.lat();
       let lon = place.geometry.location.lng();
       this.focusedWeather.city = ac[0]["short_name"];
-
-      console.log(`The user picked ${this.focusedWeather.city} with the coordinates ${lat}, ${lon}`);
       this.getWeather(lat, lon);
     });
 
-
+    // grab users current coordinates, grab their city, then get weather
     navigator.geolocation.getCurrentPosition(
        position => {
-          console.log(position.coords.latitude);
-          console.log(position.coords.longitude);
-          this.getCityFrom(position.coords.latitude, position.coords.longitude);
+          let lat = position.coords.latitude;
+          let lon = position.coords.longitude;
+          this.getCityFrom(lat, lon);
+          this.getWeather(lat, lon);
        },
        error => {
           console.log(error.message);
        },
-    )
-
-
+    );
 
   },
 
   methods: {
 
+    // get weather of selected location and set it for display
     async getWeather(lat, lon){
-      console.log(lat);
-      console.log(lon);
 
       let request = 'http://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+lon+
         '&exclude=minutely,hourly,alerts&appid='+process.env.VUE_APP_WEATHER+'&units=imperial';
-
+      // TODO: add error handling
       const res = await fetch(request);
       const data = await res.json();
       console.log(data);
       this.focusedWeather.temp = Math.round(data.current.temp);
       this.focusedWeather.wind = Math.round(data.current.wind_speed);
-      this.focusedWeather.description = data.current.weather[0].description;
+      this.focusedWeather.date = this.convertDate(data.current.dt);
+
       //capitalize the words in description
-      this.focusedWeather.description = this.focusedWeather.description.split(' ').map(word => word.charAt(0).toUpperCase() + word.substring(1)).join(' ');
+      this.focusedWeather.description = data.current.weather[0].description.split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.substring(1)).join(' ');
+
       this.focusedWeather.icon = this.getIconName(data.current.weather[0].icon);
       console.log(this.focusedWeather);
     },
 
+    // grab users city from their geo coordinates
     async getCityFrom(lat, long) {
       try {
         const request = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
@@ -117,18 +119,25 @@ export default {
         } else {
           console.log(data.results[0]);
           this.focusedWeather.city = data.results[0].address_components[0].short_name;
-          this.getWeather(lat, long);
-
         }
       } catch (error) {
         console.log(error.message);
       }
     },
 
+    // needed for dynamic img source to work
     getImgUrl(pic) {
       return require('./assets/icons/'+pic+'.svg');
     },
 
+    // convert to dd/mm
+    convertDate(epoch){
+      let selectedDate = new Date(epoch * 1000);
+      const options = { day: 'numeric', month: 'numeric' };
+      return selectedDate.toLocaleDateString("en-US", options);
+    },
+
+    // set icon based on the icon name returned from weather data
     getIconName(icon){
       switch(icon){
         case '01d':
@@ -167,7 +176,6 @@ export default {
           return 'Fog';
         case '50n':
           return 'Fog';
-
         default:
           return 'Windy';
       }
