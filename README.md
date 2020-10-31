@@ -14,3 +14,9 @@ npm install
 ```
 npm run serve
 ```
+
+### To view in browser:
+
+- Navigate to localhost:8080
+- Click 'Toggle device toolbar' button in Chrome inspector to view for mobile
+- Select 'Allow' when asked to use your location
