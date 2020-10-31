@@ -198,6 +198,7 @@ body {
   background-color: #0a0840 !important;
   color: #fff !important;
   padding: 3rem;
+  font-family: Raleway, serif !important;
 }
 
 .search-location {
@@ -211,7 +212,7 @@ body {
   height: 30px;
   line-height: 30px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .top-padding{
@@ -249,7 +250,7 @@ body {
   background-color: #3b3a66;
   margin-right: 0px !important;
   margin-left: 0px !important;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .right-float{
