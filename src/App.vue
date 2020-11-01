@@ -297,10 +297,11 @@ body {
 }
 
 .forecast-container{
-  overflow: scroll;
+  overflow: auto;
   width: 100%;
   height: 100%;
   white-space: nowrap;
+  text-align: center;
 }
 
 .forecast{
@@ -338,5 +339,11 @@ body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+#app{
+  max-width: 800px;
+  display: block;
+  margin: auto;
 }
 </style>
