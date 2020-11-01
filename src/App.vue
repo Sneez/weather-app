@@ -112,10 +112,9 @@ export default {
         const res = await fetch(request);
         const data = await res.json();
 
-        if(data.error_message){
-          console.log(data.error_message);
+        if(data.message){
+          console.log(data.message);
         } else {
-
           // set focused weather data
           this.focusedWeather = {
             temp: Math.round(data.current.temp),
